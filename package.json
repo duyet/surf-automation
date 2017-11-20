@@ -1,0 +1,29 @@
+{
+  "name": "surf-automation",
+  "version": "1.0.0",
+  "description": "Automation with PhantomJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyetdev/surf-automation.git"
+  },
+  "author": "Van-Duyet Le",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duyetdev/surf-automation/issues"
+  },
+  "homepage": "https://github.com/duyetdev/surf-automation#readme",
+  "dependencies": {
+    "webdriverio": "^4.9.6"
+  },
+  "devDependencies": {
+    "wdio-appium-service": "^0.2.3",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-firefox-profile-service": "^0.1.0",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-phantomjs-service": "^0.2.2"
+  }
+}
