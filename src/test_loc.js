@@ -20,7 +20,8 @@ var options = {
             httpProxy: '127.0.0.1:8123'
         },
         'phantomjs.page.settings.userAgent': random_ua()
-    }
+    },
+    host: '127.0.0.1',
 };
 
 webdriverio

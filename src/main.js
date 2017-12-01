@@ -17,11 +17,11 @@ function random_ua() {
 
 function random_keyword() {
     return pick([
-        'số điện thoại taxi mai linh quang nam',
+        'so điện thoại taxi mai linh quang nam',
         'so dien thoai hang vietnam airline',
         'grab nha trang',
-        'số taxi hà nội',
-        'đăng ký taxi uber tại đà năng'
+        'so taxi ha noi',
+        'dang ky taxi uber tai da nang'
     ])
 }
 
@@ -30,10 +30,12 @@ var options = {
         browserName: 'phantomjs',
         proxy: {
             proxyType: 'manual',
-            httpProxy: '127.0.0.1:8124'
+            httpProxy: '127.0.0.1:8123'
         },
         'phantomjs.page.settings.userAgent': random_ua()
-    }
+    },
+    host: '127.0.0.1',
+    port: 4444
 };
 
 var KEYWORD = random_keyword();

@@ -1,0 +1,17 @@
+version: '3'
+services:
+  selenium:
+    build: selenium-server
+    ports:
+    - "4444:4444"
+    - "8123:8123"
+    - "9051:9051"
+
+  automation:
+    build: src/
+    restart: always
+    links:
+      - selenium
+    depends_on:
+      - selenium
+    command: sh -c "./wait-for-it.sh selenium:4444 -- echo '====> Request new IP <====='; printf 'AUTHENTICATE \"123456\"\r\nSIGNAL NEWNYM\r\n' | nc selenium 9051; echo 'sleep ...'; sleep 4 ; echo 'sleep 4' ; node main"
