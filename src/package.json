@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/duyetdev/surf-automation#readme",
   "dependencies": {
-    "webdriverio": "^4.9.6"
+    "webdriverio": "^7.0.0"
   },
   "devDependencies": {
     "wdio-appium-service": "^0.2.3",
