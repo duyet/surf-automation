@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "wdio-appium-service": "^0.2.3",
-    "wdio-dot-reporter": "0.0.9",
+    "wdio-dot-reporter": "0.0.10",
     "wdio-firefox-profile-service": "^0.1.0",
     "wdio-mocha-framework": "^0.5.11",
     "wdio-phantomjs-service": "^0.2.2"
